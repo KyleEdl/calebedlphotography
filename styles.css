@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap%27");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #626356;
+  --second-bg-color: #494a40;
+  --text-color: #ededed;
+  --main-color: #a871ff;
+  /* change colors later */
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media (max-width: 860px) {
+  .video-bg {
+    position: absolute;
+    object-fit: contain;
+    top: auto;
+    height: 100%;
+    width: auto; /* Ensure the video takes the full height of the viewport */
+  }
+}
